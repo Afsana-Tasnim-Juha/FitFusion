@@ -1,4 +1,5 @@
 import { NavLink } from "react-router-dom";
+import { MdFitnessCenter } from "react-icons/md";
 
 
 const Nav = () => {
@@ -11,7 +12,7 @@ const Nav = () => {
     </>
     return (
 
-        <div className="navbar  max-w-screen-xl bg-opacity-30 bg-[#9873FF]">
+        <div className="navbar fixed max-w-screen-xl  bg-opacity-40 bg-[#9873FF]">
             <div className="navbar-start">
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -21,7 +22,10 @@ const Nav = () => {
                         {navOptions}
                     </ul>
                 </div>
-                <a className="btn btn-ghost text-xl text-[white]">FitFusion</a>
+                <div className="flex">
+                    <a className="btn btn-ghost text-xl text-[white]">FitFusion</a>
+                    <MdFitnessCenter className="mt-4 text-white mr-16" />
+                </div>
             </div>
             <div className=" text-[white] navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
